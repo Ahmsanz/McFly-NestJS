@@ -14,8 +14,8 @@ export class UsersController {
     }
 
     @Post('/login')
-    login(@Body() email: string, password: string): string {
-        return this.usersService.login(email, password); 
+    login(@Body() createUserDto: CreateUserDto): string {
+        return this.usersService.login(createUserDto.email, createUserDto.password); 
     }
 
     @Put(':userId/fav')
