@@ -1,3 +1,34 @@
+## Project Description
+
+This is a small CRUD API built with the sole purpose of fullfilling the technical test asked by the Kubide team. This is a replica of the same test in https://github.com/Ahmsanz/McFly-NodeJS, but using the framework NestJS.
+
+As suggested, its written using TypeScript, and mocks the schemas using interfaces.
+
+You can install all the needed dependencies by calling 
+
+``` bash
+$ npm i
+```
+
+and run it locally with the scripts provided by NestJS (all listed below), for instance: 
+
+``` bash
+$ npm run start:dev
+```
+
+### Unit Testing
+
+Some unit tests have been provided using **Mocha** and **Chai** (with http-chai) as testing libraries.
+
+*Some of the tests are __expected to fail__, since there is no database implemented*
+
+You might run the provided test just with:
+
+``` bash
+$ npm run test
+```
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -24,17 +55,17 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+### Framework description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+### Installation
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
