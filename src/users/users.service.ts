@@ -59,10 +59,10 @@ export class UsersService {
         }
     }
 
-    getFavs(_userId: string): Note[] {
+    getFavs(_userId: string): Note[] | string {
         const reqUser: User = this.users.find( user => user.userId === _userId); 
         const userFavs = reqUser ? reqUser.fav_notes : undefined; 
 
-        return userFavs ? this.notes.filter( note => userFavs.includes(note.noteId)) : undefined; 
+        return userFavs !== undefined ? this.notes.filter( note => userFavs.includes(note.noteId)) : 'The user has no favourite notes, yet'; 
     }
 }

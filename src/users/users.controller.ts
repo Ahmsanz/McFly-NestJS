@@ -24,7 +24,7 @@ export class UsersController {
     }
 
     @Get(':userId/favs')
-    getFavs(@Param('userId') userId: string): Note[]{
+    getFavs(@Param('userId') userId: string): Note[] | string {
         return this.usersService.getFavs(userId);
     }
 
