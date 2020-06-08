@@ -14,7 +14,7 @@ export class NotesController {
     }
 
     @Post()
-    create(@Body() createNoteDto: CreateNoteDto): void{
+    create(@Body() createNoteDto: CreateNoteDto): Note[]{
         return this.notesService.create(createNoteDto)
     }
 

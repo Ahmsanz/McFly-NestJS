@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Note } from './note.interface'
-import { CreateNoteDto } from './dto/create_note_dto';
+
 
 @Injectable()
 export class NotesService {
@@ -30,7 +30,8 @@ export class NotesService {
         return this.notes.find( note => note.noteId === id);
     }
 
-    create(newNote: Note): void{        
+    create(newNote: Note): Note[]{        
         this.notes.push(newNote);
+        return this.notes;
     }
 }
