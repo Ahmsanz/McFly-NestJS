@@ -11,7 +11,7 @@ export class UsersService {
             last_name: 'Doe', 
             email: 'john@doe.com',
             password: 'doepass',
-            fav_notes: []
+            fav_notes: ['someId', 'someOtherId']
         },
         {
             userId: '2', 
